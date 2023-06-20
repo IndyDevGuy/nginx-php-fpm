@@ -16,8 +16,9 @@ The latest tag will always follow the master branch in git. the other versions w
 #### PHP 7.2
 
 | Docker Tag | GitHub Release | Nginx Version | PHP Version | Alpine Version | Container Scripts |
-|------------|----------------|-----|--------|--------|--------|
-| 1.0.0      | 1.0.0          |1.14.0 | 7.2.4 | 3.6 | 0.3.6 |
+|------------|----------------|-----|-----------|--------|--------|
+| 1.0.0      | 1.0.0          |1.14.0 | 7.2.4     | 3.6 | 0.3.6 |
+| 1.0.1      | 1.0.1          |1.14.0 | 7.4       | 3.6 | 0.3.6 |
 
 These tags will be created as releases on GitHub and as tags in docker hub.
 
