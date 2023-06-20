@@ -166,9 +166,8 @@ RUN apk update && \
     mkdir -p /var/www/app && \
     mkdir -p /run/nginx && \
     mkdir -p /var/log/supervisor && \
-    EXPECTED_COMPOSER_SIGNATURE=$(wget -q -O - https://composer.github.io/installer.sig) && \
-    curl -sS https://getcomposer.org/installer | php && \
-    chmod +x composer.phar && mv composer.phar /usr/local/bin/composer \
+    php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer && \
+    alias composer='php /usr/bin/composer' && \
     pip install -U pip
 
 ADD conf/supervisord.conf /etc/supervisord.conf
