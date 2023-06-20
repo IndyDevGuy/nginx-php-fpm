@@ -136,8 +136,6 @@ RUN apk update && \
     curl \
     libcurl \
     git \
-    python2 \
-    python2-dev \
     py-pip \
     augeas-dev \
     openssl-dev \
