@@ -1,4 +1,4 @@
-name: Docker Image Release CI W/ Cache
+name: Docker Image Release Build CI W/ Cache
 
 on:
   release:
