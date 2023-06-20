@@ -167,7 +167,7 @@ RUN apk update && \
     mkdir -p /run/nginx && \
     mkdir -p /var/log/supervisor && \
     php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer && \
-    alias composer='php /usr/bin/composer' && \
+    alias composer='php /usr/bin/composer'
     #pip install -U pip
 
 ADD conf/supervisord.conf /etc/supervisord.conf
