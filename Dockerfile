@@ -158,7 +158,7 @@ RUN apk update && \
     docker-php-ext-configure gd && \
     #curl iconv session
     #docker-php-ext-install pdo_mysql pdo_sqlite mysqli mcrypt gd exif intl xsl json soap dom zip opcache && \
-    docker-php-ext-install pdo_mysql pdo_sqlite mysqli mbstring gd exif intl xsl json soap dom zip opcache && \
+    docker-php-ext-install pdo_mysql pdo_sqlite mysqli gd exif intl xsl json soap dom zip opcache && \
     #pecl install xdebug && \
     docker-php-source delete && \
     mkdir -p /etc/nginx && \
