@@ -154,6 +154,7 @@ RUN apk update && \
     libffi-dev \
     freetype-dev \
     sqlite-dev \
+    libzip-dev \
     libjpeg-turbo-dev && \
     docker-php-ext-configure gd && \
     #curl iconv session
